@@ -1,0 +1,52 @@
+.footer
+	padding-top: 20px
+
+.footer__left-part
+	@extend %fl-left
+	width: 540px
+	margin: 2px 0 0 10px
+
+.footer__nav
+	display: inline-block
+	margin-right: 50px
+	vertical-align: top
+
+.footer__nav:last-child
+	margin-right: 0
+
+.footer__nav-list
+	font-size: 0
+
+.footer__nav-list-item
+	margin-bottom: 3px
+	font-size: 12px
+
+.footer__right-part
+	@extend %fl-right
+	width: 140px
+	margin-right: 3px
+
+.footer__tel-link,
+.footer__mail-link
+	position: relative
+	font-size: 12px
+	padding-left: 15px
+
+.footer__tel-link:after,
+.footer__mail-link:after
+	@extend %after-block
+	background-repeat: no-repeat
+	background-size: contain
+	font-weight: 900
+	font-family: 'Font Awesome 5 Free'
+
+.footer__tel-link:after
+	top: 0
+	left: 0
+	content: '\f095'
+	transform: rotateY(180deg)
+
+.footer__mail-link:after
+	top: 0
+	left: 0
+	content: '\f0e0'

@@ -1,0 +1,74 @@
+$bgGray: #e5e5e5
+$priceLiteGreen: #88c03d
+$priceDarkGreen: #6a9630
+$textGreen: #8cc63f
+$navBgGreen: #d9ecc0
+$breadCrumbsGray: #929292
+$tileBorderCol: #e6e6e6
+
+%after-block
+	display: block
+	content: ''
+	position: absolute
+
+%fl-left
+	float: left
+
+%fl-right
+	float: right
+
+%gray-block
+	background: $bgGray
+	border-radius: 5px
+
+%pointer
+	cursor: pointer
+
+body 
+	font-family: sans-serif
+	background: #fff
+
+a
+	color: #000
+	text-decoration: none
+
+.container 
+	width: 1020px
+	margin: 0 auto
+	
+
+.bg 
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	margin: 0 auto
+	filter: invert(98%)
+	opacity: 0.8
+	pointer-events: none
+
+.click 
+	position: fixed
+	top: 10px 
+	right: 10px
+	width: 70px 
+	height: 70px
+	background: tomato
+
+.hidden
+	border: 0
+	clip: rect(0 0 0 0)
+	height: 1px
+	margin: -1px
+	overflow: hidden
+	padding: 0
+	position: absolute
+	width: 1px
+
+.hr
+	background: $bgGray
+	width: 1000px
+	height: 1px
+
+.nodisplay
+	display: none

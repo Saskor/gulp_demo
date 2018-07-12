@@ -1,0 +1,190 @@
+.header
+	padding: 14px 0 5px
+
+.header__logo
+	@extend %fl-left
+	width: 140px
+	height: 60px
+	margin: 3px 0 0 6px
+
+.header__address
+	@extend %fl-left
+	@extend %gray-block
+	width: 238px
+	height: 54px
+	margin-left: 60px
+	border-radius: 5px
+	padding: 9px 0 0 9px
+
+.header__address-tel-link,
+.header__address-map-link 
+	display: inline-block
+	position: relative
+
+.header__address-tel-link
+	padding-left: 20px
+	font-size: 17px
+
+.header__address-map-link
+	margin-left: 5px
+	font-size: 13px
+
+.header__address-tel-link:after,
+.header__address-map-link:after
+	@extend %after-block
+	
+
+.header__address-tel-link:after
+	width: 20px
+	height: 20px
+	font-family: 'Font Awesome 5 Free'
+	font-weight: 900
+	font-size: 13px
+	content: "\f095"
+	transform: rotateY(180deg)
+	top: 3px
+	left: -3px
+
+.header__address-map-link:after
+	width: 20px
+	height: 20px
+	font-family: 'Font Awesome 5 Free'
+	font-weight: 900
+	font-size: 17px
+	content: "\f3c5"
+	top: -24px
+	right: -10px
+
+.header__delivery-and-questions
+	@extend %fl-left
+	@extend %gray-block
+	width: 285px
+	height: 54px
+	padding: 7px 0 0 14px
+	margin-left: 15px
+
+.header__delivery-and-questions-delivery 
+	color: $textGreen
+	font-size: 17px
+	letter-spacing: -0.25px
+
+.header__delivery-and-questions-questions
+	font-size: 13px
+
+.header__login-and-shop-cart
+	@extend %fl-right
+	width: 125px
+	height: 45px
+
+.header__login-and-shop-cart-login
+	@extend %gray-block
+	display: block
+	height: 22px
+	line-height: 23px
+	font-size: 13px
+	text-align: center
+
+.header__login-and-shop-cart-cart
+	@extend %fl-right
+	position: relative
+	font-size: 15px
+	margin: 4px 8px 0 0
+	padding-left: 22px
+
+.header__login-and-shop-cart-cart:after
+	@extend %after-block
+	content: '\f07a'
+	font-family: 'Font Awesome 5 Free'
+	font-weight: 900
+	font-size: 12px
+	top: 2px
+	left: 0
+
+.main-nav
+	@extend %fl-left
+	width: 810px
+	margin-top: 8px
+
+.main-nav__list
+	font-size: 0
+
+.main-nav__list-item 
+	@extend %gray-block
+	margin-right: 4px
+	display: inline-block
+	height: 30px
+	font-size: 13px
+
+.main-nav__list-item:last-child
+	margin-right: 0
+
+.main-nav__list-item-link
+	display: inline-block
+	padding: 0 8px
+	line-height: 30px
+
+.main-nav__list-item-link-ico,
+.main-nav__list-item-link-text
+	display: inline-block
+	vertical-align: middle
+
+.main-nav__list-item-link-ico
+	background-repeat: no-repeat
+	background-size: contain
+	width: 27px
+	height: 24px
+
+.main-nav__list-item-link-text
+	line-height: 15px
+
+.main-nav__list-item-link-ico_1
+	background-image: url('../img/menu-ico-1.png')
+
+.main-nav__list-item-link-ico_2
+	background-image: url('../img/menu-ico-2.png')
+
+.main-nav__list-item-link-ico_3
+	background-image: url('../img/menu-ico-3.png')
+
+.main-nav__list-item-link-ico_4
+	background-image: url('../img/menu-ico-4.png')
+
+.main-nav__list-item-link-ico_5
+	background-image: url('../img/menu-ico-5.png')
+
+.main-nav__list-item-link-ico_6
+	background-image: url('../img/menu-ico-6.png')
+
+.main-nav__list-item-link-ico_7
+	background-image: url('../img/menu-ico-7.png')
+
+.search, .text-input
+	width: 85px
+	height: 28px
+	border-radius: 5px
+
+
+.search
+	@extend %fl-right
+	position: relative
+	margin: 10px 10px 0 0
+
+.text-input
+	display: inline-block
+	font-size: 15px
+	padding-left: 5px
+
+.search button
+	background: none
+	border: none
+	font-size: 15px
+	position: absolute
+	top: 0
+	right: 0
+	width: 28px
+	height: 28px
+
+.header__hr
+	margin: 10px 0 0 10px
+	@extend %fl-left
+	margin: 8px 0 0 10px

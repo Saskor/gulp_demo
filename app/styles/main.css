@@ -1,0 +1,698 @@
+/*
+	HTML5 Reset :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+
+	Eric Meyer					:: http://meyerweb.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+
+-------------------------------------------------------------------------------*/
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent; }
+
+article, aside, figure, footer, header, nav, section, details, summary {
+  display: block; }
+
+/* Handle box-sizing while better addressing child elements:
+   http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+/* Responsive images and other embedded objects
+*/
+img,
+object,
+embed {
+  max-width: 100%; }
+
+/*
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+	 In fact, it *will* cause problems with Google Maps' controls at small size.
+	If this is the case for you, try uncommenting the following:
+
+#map img {
+		max-width: none;
+}
+*/
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll; }
+
+/* we use a lot of ULs that aren't bulleted.
+	don't forget to restore the bullets within content. */
+ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th {
+  font-weight: bold;
+  vertical-align: bottom; }
+
+td {
+  font-weight: normal;
+  vertical-align: top; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */ }
+
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+input[type="checkbox"] {
+  vertical-align: bottom; }
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline; }
+
+.ie6 input {
+  vertical-align: text-bottom; }
+
+select, input, textarea {
+  font: 99% sans-serif; }
+
+table {
+  font-size: inherit;
+  font: 100%; }
+
+small {
+  font-size: 85%; }
+
+strong {
+  font-weight: bold; }
+
+td, td img {
+  vertical-align: top; }
+
+/* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif; }
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer; }
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {
+  margin: 0; }
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {
+  width: auto;
+  overflow: visible; }
+
+/* scale images in IE7 more attractively */
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+/* let's clear some floats */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+.header__address-tel-link:after,
+.header__address-map-link:after, .header__login-and-shop-cart-cart:after, .breadcrumb__list-item:after, .chevron:after, .footer__tel-link:after,
+.footer__mail-link:after {
+  display: block;
+  content: '';
+  position: absolute; }
+
+.header__logo, .header__address, .header__delivery-and-questions, .main-nav, .header__hr, .main__catalog-filter, .main__order-filter, .pagination, .to-top-page, .footer__left-part {
+  float: left; }
+
+.header__login-and-shop-cart, .header__login-and-shop-cart-cart, .search, .footer__right-part {
+  float: right; }
+
+.header__address, .header__delivery-and-questions, .header__login-and-shop-cart-login, .main-nav__list-item, .main__catalog-filter, .main__catalog-filter-list,
+.main__order-filter-list, .main__order-filter {
+  background: #e5e5e5;
+  border-radius: 5px; }
+
+.main__catalog-filter, .main__order-filter {
+  cursor: pointer; }
+
+body {
+  font-family: sans-serif;
+  background: #fff; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+.container {
+  width: 1020px;
+  margin: 0 auto; }
+
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  filter: invert(98%);
+  opacity: 0.8;
+  pointer-events: none; }
+
+.click {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 70px;
+  height: 70px;
+  background: tomato; }
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.hr {
+  background: #e5e5e5;
+  width: 1000px;
+  height: 1px; }
+
+.nodisplay {
+  display: none; }
+
+.header {
+  padding: 14px 0 5px; }
+
+.header__logo {
+  width: 140px;
+  height: 60px;
+  margin: 3px 0 0 6px; }
+
+.header__address {
+  width: 238px;
+  height: 54px;
+  margin-left: 60px;
+  border-radius: 5px;
+  padding: 9px 0 0 9px; }
+
+.header__address-tel-link,
+.header__address-map-link {
+  display: inline-block;
+  position: relative; }
+
+.header__address-tel-link {
+  padding-left: 20px;
+  font-size: 17px; }
+
+.header__address-map-link {
+  margin-left: 5px;
+  font-size: 13px; }
+
+.header__address-tel-link:after {
+  width: 20px;
+  height: 20px;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 13px;
+  content: "\f095";
+  transform: rotateY(180deg);
+  top: 3px;
+  left: -3px; }
+
+.header__address-map-link:after {
+  width: 20px;
+  height: 20px;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 17px;
+  content: "\f3c5";
+  top: -24px;
+  right: -10px; }
+
+.header__delivery-and-questions {
+  width: 285px;
+  height: 54px;
+  padding: 7px 0 0 14px;
+  margin-left: 15px; }
+
+.header__delivery-and-questions-delivery {
+  color: #8cc63f;
+  font-size: 17px;
+  letter-spacing: -0.25px; }
+
+.header__delivery-and-questions-questions {
+  font-size: 13px; }
+
+.header__login-and-shop-cart {
+  width: 125px;
+  height: 45px; }
+
+.header__login-and-shop-cart-login {
+  display: block;
+  height: 22px;
+  line-height: 23px;
+  font-size: 13px;
+  text-align: center; }
+
+.header__login-and-shop-cart-cart {
+  position: relative;
+  font-size: 15px;
+  margin: 4px 8px 0 0;
+  padding-left: 22px; }
+
+.header__login-and-shop-cart-cart:after {
+  content: '\f07a';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 12px;
+  top: 2px;
+  left: 0; }
+
+.main-nav {
+  width: 810px;
+  margin-top: 8px; }
+
+.main-nav__list {
+  font-size: 0; }
+
+.main-nav__list-item {
+  margin-right: 4px;
+  display: inline-block;
+  height: 30px;
+  font-size: 13px; }
+
+.main-nav__list-item:last-child {
+  margin-right: 0; }
+
+.main-nav__list-item-link {
+  display: inline-block;
+  padding: 0 8px;
+  line-height: 30px; }
+
+.main-nav__list-item-link-ico,
+.main-nav__list-item-link-text {
+  display: inline-block;
+  vertical-align: middle; }
+
+.main-nav__list-item-link-ico {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 27px;
+  height: 24px; }
+
+.main-nav__list-item-link-text {
+  line-height: 15px; }
+
+.main-nav__list-item-link-ico_1 {
+  background-image: url("../img/menu-ico-1.png"); }
+
+.main-nav__list-item-link-ico_2 {
+  background-image: url("../img/menu-ico-2.png"); }
+
+.main-nav__list-item-link-ico_3 {
+  background-image: url("../img/menu-ico-3.png"); }
+
+.main-nav__list-item-link-ico_4 {
+  background-image: url("../img/menu-ico-4.png"); }
+
+.main-nav__list-item-link-ico_5 {
+  background-image: url("../img/menu-ico-5.png"); }
+
+.main-nav__list-item-link-ico_6 {
+  background-image: url("../img/menu-ico-6.png"); }
+
+.main-nav__list-item-link-ico_7 {
+  background-image: url("../img/menu-ico-7.png"); }
+
+.search, .text-input {
+  width: 85px;
+  height: 28px;
+  border-radius: 5px; }
+
+.search {
+  position: relative;
+  margin: 10px 10px 0 0; }
+
+.text-input {
+  display: inline-block;
+  font-size: 15px;
+  padding-left: 5px; }
+
+.search button {
+  background: none;
+  border: none;
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 28px; }
+
+.header__hr {
+  margin: 10px 0 0 10px;
+  margin: 8px 0 0 10px; }
+
+.breadcrumb {
+  padding-left: 9px; }
+
+.breadcrumb__list {
+  font-size: 0;
+  list-style: none; }
+
+.breadcrumb__list-item {
+  font-size: 11px;
+  padding-left: 15px;
+  position: relative;
+  display: inline-block; }
+
+.breadcrumb__list-item,
+.breadcrumb__list-item a {
+  color: #929292; }
+
+.breadcrumb__list-item.active a {
+  color: #000; }
+
+.breadcrumb__list-item:after {
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 0;
+  padding: 0 5px;
+  background-repeat: no-repeat;
+  content: '>'; }
+
+.breadcrumb__list-item:first-child:after {
+  padding: 0;
+  padding-right: 5px;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #929292;
+  content: '\f015'; }
+
+.main__catalog-filter {
+  display: inline-block;
+  width: 230px;
+  height: 30px;
+  margin: 10px 0 0 0px;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative; }
+
+.chevron {
+  position: absolute;
+  top: 11px;
+  right: 7px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent; }
+
+.chevron:after {
+  position: absolute;
+  top: -7px;
+  right: -5px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid #e5e5e5;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent; }
+
+.chevron_small {
+  top: 12px;
+  right: 5px;
+  border-top-width: 4px;
+  border-left-width: 4px;
+  border-right-width: 4px; }
+
+.main__catalog-filter-text,
+.main__order-filter-text {
+  display: inline-block;
+  width: 100%;
+  text-align: center; }
+
+.main__catalog-filter-list,
+.main__order-filter-list {
+  width: 100%;
+  padding: 4px 10px;
+  text-align: center; }
+
+.main__order-filter {
+  position: relative;
+  display: inline-block;
+  width: 137px;
+  height: 29px;
+  margin: 13px 0 0 102px;
+  font-size: 12px;
+  line-height: 29px; }
+
+.pagination {
+  width: 180px;
+  height: 28px; }
+
+.pagination_main-top {
+  margin: 13px 0 0 165px; }
+
+.pagination__list {
+  font-size: 0; }
+
+.pagination__list-item {
+  display: inline-block;
+  font-size: 12px;
+  width: 13px;
+  text-align: center; }
+
+.pagination__list-item:first-child {
+  padding-right: 5px;
+  width: 63px; }
+
+.pagination__list-item:last-child {
+  padding-left: 15px;
+  width: 30px; }
+
+.pagination__list-item-link {
+  display: inline-block;
+  width: 100%;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 3px; }
+
+.pagination__list-item-link.active {
+  background: #d9ecc0; }
+
+.products-list {
+  width: 1000px;
+  margin: 16px auto;
+  font-size: 0; }
+
+.products-list__item {
+  display: inline-block;
+  width: 180px;
+  height: 300px;
+  margin: 0 25px 17px 0;
+  vertical-align: top; }
+
+.products-list__item:nth-child(5n) {
+  margin-right: 0; }
+
+.products-list__item-link {
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  transition: box-shadow .3s linear; }
+  .products-list__item-link:hover {
+    box-shadow: 0px 0px 5px 3px #d9ecc0;
+    transition: box-shadow .3s linear; }
+
+.products-list__item-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 5px; }
+
+.products-list__item-title {
+  font-size: 14px;
+  margin-top: 7px; }
+
+.products-list__item-description {
+  height: 60px;
+  margin-top: 4px;
+  font-size: 10px;
+  line-height: 12px; }
+
+.products-list__item-add-to-cart-button {
+  height: 25px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #88c03d, #6a9630);
+  margin-top: 8px;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 24px;
+  border: 1px solid;
+  border-top-color: #b6d989;
+  border-left-color: #b6d989;
+  border-bottom-color: #55742f;
+  border-right-color: #55742f; }
+  .products-list__item-add-to-cart-button .fa-shopping-cart {
+    font-size: 12px; }
+
+.products-list__item-add-to-cart-button-price-text,
+.products-list__item-add-to-cart-button-money-unit-text {
+  display: inline-block; }
+
+.products-list__item-add-to-cart-button-price-text {
+  margin-left: 5px; }
+
+.products-list__item-add-to-cart-button-money-unit-text {
+  margin-left: 2px; }
+
+.to-top-page {
+  width: 60px;
+  height: 16px;
+  margin: 8px 0 0 445px;
+  font-size: 12px; }
+
+.pagination_main-bot {
+  margin-left: 128px; }
+
+.main__hr {
+  margin: 14px 0 0 11px; }
+
+.footer {
+  padding-top: 20px; }
+
+.footer__left-part {
+  width: 540px;
+  margin: 2px 0 0 10px; }
+
+.footer__nav {
+  display: inline-block;
+  margin-right: 50px;
+  vertical-align: top; }
+
+.footer__nav:last-child {
+  margin-right: 0; }
+
+.footer__nav-list {
+  font-size: 0; }
+
+.footer__nav-list-item {
+  margin-bottom: 3px;
+  font-size: 12px; }
+
+.footer__right-part {
+  width: 140px;
+  margin-right: 3px; }
+
+.footer__tel-link,
+.footer__mail-link {
+  position: relative;
+  font-size: 12px;
+  padding-left: 15px; }
+
+.footer__tel-link:after,
+.footer__mail-link:after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free'; }
+
+.footer__tel-link:after {
+  top: 0;
+  left: 0;
+  content: '\f095';
+  transform: rotateY(180deg); }
+
+.footer__mail-link:after {
+  top: 0;
+  left: 0;
+  content: '\f0e0'; }

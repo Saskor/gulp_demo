@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fresh Design - логин</title>
+
+<link rel="stylesheet" type="text/css" href="styles/libs.min.css">
+<link rel="stylesheet" type="text/css" href="styles/form.css">
+<script src="js/libs.min.js"></script>
+<script src="js/programmer.js"></script>
+</head>
+<body>
+	
+	<div class="click"></div>
+	<img class="bg" src="source/FR_Вход и регистрация - 4.png" alt="">
+
+	<form method="post" action="" class="login">
+		<p class="login__title">Введите регистрационные данные</p>
+		<p class="login__subtitle">Пожалуйста, заполните все поля, они обязательны.</p>
+
+		<div class="login__fields">
+
+			<label class="login__label" for="email">Ваш E-mail</label>
+
+			<span class="email-err email-err_invisible">Emeil адрес введен некорректно</span>
+			
+			<input class="login__input" type="email" name="email" id="email" maxlength="100">
+
+			<label class="login__label" for="password">Придумайте пароль</label>
+			
+			<input class="login__input" type="password" name="password" id="password" autocomplete="off">
+			
+			<label class="login__label" for="rpassword">Повторите ввод пароля</label>
+			
+			<input class="login__input" type="rpassword" name="rpassword" id="rpassword" autocomplete="off">
+			
+			<label class="login__label" for="name">Имя</label>
+			
+			<input class="login__input" type="text" name="name" id="name">
+			
+			<label class="login__label" for="surname">Фамилия</label>
+			
+			<input class="login__input" type="text" name="surname" id="surname">
+		</div>
+
+		<div class="login__controls">
+			<button class="login__submit-button" id="submit-button" name="submit-button">Зарегистрироваться</button>
+
+			<button class="login__clear-button" id="clear-button" name="clear-button">
+				<i class="fa fa-times"></i>
+				Отменить
+			</button>
+
+
+		</div>
+
+	</form>	
+
+</body>
+</html>
